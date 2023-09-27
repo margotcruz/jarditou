@@ -23,12 +23,10 @@
     </nav>
                  
                                       <!--section--> 
-        <div>
+        <main>
            <img src="assets/img/promotion.jpg" alt="Promotion sur lames de terrasse">
            <h1>Contact</h1> 
            <hr>                                             
-        </div>
-        <div>
         <p>* Ces zones sont obligatoires</p>
         
         <form action="http://bienvu.net/script.php" method="get">
@@ -42,16 +40,15 @@
                     
                         <label for="sexe">Sexe* : </label>
 
-                        <input type="radio" name="sexe" value="Feminin" required title="Champs obligatoires"><label for="sexe">Féminin</label>
+                        <input type="radio" name="sexe" value="Feminin" id="sexe_f" required title="Champs obligatoires"><label for="sexe">Féminin</label>
                     
-
-                        <input type="radio" name="sexe" value="Masculin" id="sexe" required title="Champs obligatoires"><label for="sexe">Masculin</label>
+                        <input type="radio" name="sexe" value="Masculin" id="sexe_m" required title="Champs obligatoires"><label for="sexe">Masculin</label>
                    <br>
                     <label for="date">Date de naissance* : </label>
                         <input type="date" name="ddn" id="date" required title="Entrez votre date de naissance"><br>
                 
                     <label for="cp">Code postal* : </label>
-                        <input type="text" name="cp" id="cp" pattern="[0-9]" required title="Enttrez votre code postal"><br>
+                        <input type="text" name="cp" id="cp" pattern="^[0-9]" required title="Entrez votre code postal"><br>
                 
                     <label for="adresse">Adresse : </label>
                         <input type="text" name="adresse" id="adresse"><br>
@@ -83,8 +80,9 @@
                     
                     <input type="submit" value="Envoyer">
                     <input type="reset" value="Annuler">
+        </form>
     <hr>
-        </div>                        <!--Mention-->
+        </main>                        <!--Mention-->
     <footer>
         <ul>
             <li><a href="" title="Mentionlegales">Mention légales</a></li>
