@@ -2,6 +2,8 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="type.css">
     <title>Contact</title>
 </head>
      <body>
@@ -9,24 +11,31 @@
      
                                                          <!--header-->
     <header>
-        <img src="assets/img/jarditou_logo.jpg" alt="Logo jarditou" width="350" height="100"> <br>
-            <p>La qualité depuis 70 ans</p>
-        <hr>
+        <img src="assets/img/JarditouLogo.jpg" alt="Logo jarditou" height="30%" width="20%"> <br>
+        
     </header>
                                                             <!--nav-->
     <nav>
-        <ul>
-            <li><a href="index.html" title="Accueil">Accueil</a></li>
-            <li><a href="tableau.html" title="Tableau">Tableau</a></li>
-            <li><a href="contact.html" title="Contact">Contact</a></li>
+        
+            
+            <ul class="dropdownmenu">
+                <li><a href="#">Menu</a>
+                </ul>
+                  <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="tableau.html">Tableau</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  
         </ul>
+        <img src="assets/img/promo2.png" alt="Promotion sur lames de terrasse" width="100%">
     </nav>
                  
                                       <!--section--> 
         <main>
-           <img src="assets/img/promotion.jpg" alt="Promotion sur lames de terrasse">
-           <h1>Contact</h1> 
-           <hr>                                             
+           
+           
+           <h1 id="contact">Contact</h1> 
+                                                      
         <p>* Ces zones sont obligatoires</p>
         
         <form action="http://bienvu.net/script.php" method="get">
@@ -61,7 +70,7 @@
             
                                 <!--Seconde partie du formulaire-->
             </fieldset>
-            <fieldset>
+            <fieldset >
                 <legend>Votre demande</legend>
                     <label for="sujet">Sujet* : </label>
                         <select id="sujet" size="1">
@@ -78,10 +87,10 @@
                     <input type="checkbox" name="check" value="check" id="check" title="Champs obligatoires">
                         <label for="check">J'accepte le traitement informatique de ce Formulaire</label><br>
                     
-                    <input type="submit" value="Envoyer">
-                    <input type="reset" value="Annuler">
+                    <input type="submit" value="Envoyer" id="submit">
+                    <input type="reset" value="Annuler" id="reset">
         </form>
-    <hr>
+    
         </main>                        <!--Mention-->
     <footer>
         <ul>
@@ -91,3 +100,4 @@
         </ul>
     </footer>
     </body>
+</html>
