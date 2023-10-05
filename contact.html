@@ -11,23 +11,22 @@
      
                                                          <!--header-->
     <header>
-        <img src="assets/img/JarditouLogo.jpg" alt="Logo jarditou" height="30%" width="20%"> <br>
+        <img src="assets/img/JarditouLogo.jpg" alt="Logo jarditou" > <br>
         
     </header>
                                                             <!--nav-->
     <nav>
-        
-            
+        <ul>
+
             <ul class="dropdownmenu">
-                <li><a href="#">Menu</a>
+              <li><a href="#">|Menu|</a>
+                <ul>
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="tableau.html">Tableau</a></li>
+                  <li><a href="contact.html">Contact</a></li>
                 </ul>
-                  <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="tableau.html">Tableau</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                  
-        </ul>
-        <img src="assets/img/promo2.png" alt="Promotion sur lames de terrasse" width="100%">
+            </ul>    
+        <img src="assets/img/promo2.png" alt="Promotion sur lames de terrasse" class="imgPromo" >
     </nav>
                  
                                       <!--section--> 
@@ -39,7 +38,7 @@
         <p>* Ces zones sont obligatoires</p>
         
         <form action="http://bienvu.net/script.php" method="get">
-            <fieldset>
+            <fieldset class="PremierePartie">
                 <legend>Vos coordonnées</legend>
                     <label for="nom">Votre nom* : </label>
                         <input type="text" name="nom" id="nom" pattern="^[A-z]+$" required title="Entrez votre nom"><br>
@@ -47,8 +46,7 @@
                     <label for="prenom">Votre prenom* : </label>    
                         <input type="text" name="prenom" id="prenom" pattern="^[A-z]+$" required title="Entrez votre prenom"><br>
                     
-                        <label for="sexe">Sexe* : </label>
-
+                        <p>Sexe :</p>
                         <input type="radio" name="sexe" value="Feminin" id="sexe_f" required title="Champs obligatoires"><label for="sexe">Féminin</label>
                     
                         <input type="radio" name="sexe" value="Masculin" id="sexe_m" required title="Champs obligatoires"><label for="sexe">Masculin</label>
@@ -74,7 +72,7 @@
                 <legend>Votre demande</legend>
                     <label for="sujet">Sujet* : </label>
                         <select id="sujet" size="1">
-                            <option value="">Veuillez selectionner un sujet</option>
+                            <option selected hidden disabled value="">Veuillez selectionner un sujet</option>
                             <option value="mesCommandes">Mes commandes</option>
                             <option value="questionSurUnProduit">Question sur un produit</option>
                             <option value="reclamation">Reclamation</option>
@@ -93,7 +91,7 @@
     
         </main>                        <!--Mention-->
     <footer>
-        <ul>
+        <ul class="Mention">
             <li><a href="" title="Mentionlegales">Mention légales</a></li>
             <li><a href="" title="Horaires">Horaires</a></li>
             <li><a href="" title="PlanDuSite">Plan du site</a></li>
