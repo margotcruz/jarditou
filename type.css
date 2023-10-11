@@ -214,6 +214,7 @@ fieldset {
   
     body {
       max-width: 768px;
+      font-size: small;
     }
   
     header { 
@@ -241,5 +242,6 @@ fieldset {
         display: flex;
         flex-direction: column;       
       }
+
     }
   
